@@ -1,0 +1,2500 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Pixel Formaturas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../imagens/logo.png" alt="Logo Pixel Formaturas" height="40">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="funcionalidades.html">Funcionalidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="produtos.html">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="family-day.html">Family Day</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="taxas-financeiras.html">Taxas Financeiras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quem-somos.html">Quem somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contatos.html">Contatos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-primary ms-lg-3" href="https://www.meusalbunsdeformatura.com.br">Já sou parceiro</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="features-hero">
+            <div class="container">
+                <div class="hero-wrapper">
+                    <div class="hero-content">
+                        <span class="hero-badge">Produtos Premium</span>
+                        <h1>Álbuns e acessórios que encantam</h1>
+                        <p>Ofereça produtos exclusivos e de alta qualidade para seus clientes, com toda a praticidade da nossa plataforma</p>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <div class="stat-icon">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <span class="stat-value">100%</span>
+                                    <span class="stat-label">Qualidade</span>
+                                </div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-icon">
+                                    <i class="fas fa-box"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <span class="stat-value">50+</span>
+                                    <span class="stat-label">Produtos</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <style>
+        .features-hero {
+            background: #E30613;
+            padding: 5rem 0;
+        }
+
+        .hero-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: white;
+            color: #E30613;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-content h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero-content p {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .stat-icon {
+            width: 48px;
+            height: 48px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .stat-icon i {
+            color: white;
+            font-size: 1.25rem;
+        }
+
+        .stat-info {
+            text-align: left;
+        }
+
+        .stat-value {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+        }
+
+        .stat-label {
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        @media (max-width: 768px) {
+            .features-hero {
+                padding: 3rem 0;
+            }
+
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .hero-stats {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+        }
+        </style>
+
+        <!-- Products Section -->
+        <section class="py-5">
+            <div class="container">
+                <!-- Filtro de Categorias -->
+                <div class="category-filter">
+                    <div class="filter-header text-center mb-4">
+                        <h2 class="filter-title">Nossos Produtos</h2>
+                        <p class="filter-subtitle">Escolha uma categoria para explorar</p>
+                    </div>
+                    <nav class="filter-nav">
+                        <div class="filter-scroll">
+                            <button class="filter-button active" data-filter="all">
+                                <i class="fas fa-th-large"></i>
+                                <span>Todos</span>
+                            </button>
+                            <button class="filter-button" data-filter="albuns">
+                                <i class="fas fa-book"></i>
+                                <span>Álbuns</span>
+                            </button>
+                            <button class="filter-button" data-filter="estojos">
+                                <i class="fas fa-box"></i>
+                                <span>Estojos</span>
+                            </button>
+                            <button class="filter-button" data-filter="acessorios">
+                                <i class="fas fa-gift"></i>
+                                <span>Acessórios</span>
+                            </button>
+                            <button class="filter-button" data-filter="servicos">
+                                <i class="fas fa-cogs"></i>
+                                <span>Serviços</span>
+                            </button>
+                        </div>
+                    </nav>
+                </div>
+
+                <style>
+                .category-filter {
+                    margin-bottom: 2rem;
+                }
+
+                .filter-header {
+                    margin-bottom: 1.5rem;
+                }
+
+                .filter-title {
+                    font-size: 2rem;
+                    font-weight: 700;
+                    color: var(--primary-color);
+                    margin-bottom: 0.5rem;
+                }
+
+                .filter-subtitle {
+                    font-size: 1rem;
+                    color: #666;
+                }
+
+                .filter-nav {
+                    position: relative;
+                    margin: 0 -1rem;
+                    padding: 0 1rem;
+                    overflow: hidden;
+                }
+
+                .filter-scroll {
+                    display: flex;
+                    gap: 0.5rem;
+                    padding: 0.5rem 0;
+                    overflow-x: auto;
+                    -webkit-overflow-scrolling: touch;
+                    scrollbar-width: none;
+                    -ms-overflow-style: none;
+                }
+
+                .filter-scroll::-webkit-scrollbar {
+                    display: none;
+                }
+
+                .filter-button {
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    padding: 0.75rem 1.25rem;
+                    background: #f8f9fa;
+                    border: none;
+                    border-radius: 100px;
+                    color: #666;
+                    font-weight: 500;
+                    white-space: nowrap;
+                    transition: all 0.3s ease;
+                    flex-shrink: 0;
+                }
+
+                .filter-button i {
+                    font-size: 1rem;
+                }
+
+                .filter-button.active {
+                    background: var(--primary-color);
+                    color: white;
+                }
+
+                .filter-button:not(.active):hover {
+                    background: var(--primary-color-light);
+                    color: var(--primary-color);
+                }
+
+                /* Ajustes para o grid de produtos */
+                .product-grid {
+                    display: grid;
+                    gap: 1rem;
+                    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+                }
+
+                .product-card {
+                    background: white;
+                    border-radius: 12px;
+                    overflow: hidden;
+                    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                    transition: transform 0.3s ease;
+                }
+
+                .product-card:hover {
+                    transform: translateY(-4px);
+                }
+
+                .product-img-wrapper {
+                    position: relative;
+                    padding-top: 75%;
+                    overflow: hidden;
+                }
+
+                .product-img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: transform 0.3s ease;
+                }
+
+                .product-card:hover .product-img {
+                    transform: scale(1.05);
+                }
+
+                .product-content {
+                    padding: 1.25rem;
+                }
+
+                .product-title {
+                    font-size: 1.25rem;
+                    margin-bottom: 0.5rem;
+                    color: #333;
+                }
+
+                .product-description {
+                    font-size: 0.875rem;
+                    color: #666;
+                    margin-bottom: 1rem;
+                }
+
+                .product-features {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0 0 1rem;
+                    font-size: 0.875rem;
+                }
+
+                .product-features li {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    margin-bottom: 0.5rem;
+                    color: #555;
+                }
+
+                .product-features i {
+                    color: var(--primary-color);
+                    font-size: 0.75rem;
+                }
+
+                @media (max-width: 768px) {
+                    .filter-title {
+                        font-size: 1.75rem;
+                    }
+
+                    .filter-button {
+                        padding: 0.625rem 1rem;
+                        font-size: 0.875rem;
+                    }
+
+                    .product-grid {
+                        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                    }
+                }
+
+                @media (max-width: 480px) {
+                    .filter-title {
+                        font-size: 1.5rem;
+                    }
+
+                    .filter-scroll {
+                        padding: 0.25rem 0;
+                    }
+
+                    .filter-button {
+                        padding: 0.5rem 0.875rem;
+                        font-size: 0.8125rem;
+                    }
+
+                    .product-grid {
+                        grid-template-columns: 1fr;
+                        gap: 0.75rem;
+                    }
+
+                    .product-content {
+                        padding: 1rem;
+                    }
+
+                    .product-title {
+                        font-size: 1.125rem;
+                    }
+                }
+                </style>
+
+                <div class="product-sections">
+                    <!-- Álbuns -->
+                    <div class="category-section" data-category="albuns">
+                        <h2 class="text-center mb-4">Álbuns</h2>
+                        <div class="products-grid">
+                            <!-- Linha Atelier Pixel -->
+                            <div class="product-item albuns fade-in">
+                                <div class="product-card bg-white h-100 shadow-sm rounded-3 overflow-hidden border-0">
+                                    <div class="position-relative">
+                                        <img src="../imagens/albuns/atelie_ (1).jpg" 
+                                             alt="Linha Atelier Pixel" 
+                                             class="img-fluid w-100">
+                                        <button onclick="abrirGaleria('atelier-pixel', 5)" 
+                                                class="btn btn-light position-absolute bottom-0 end-0 m-3">
+                                            <i class="fas fa-images me-2"></i>Ver fotos
+                                        </button>
+                                    </div>
+                                    <div class="p-4">
+                                        <h3>Linha Atelier Pixel</h3>
+                                        <p>Nossa linha premium com materiais nobres e acabamento artesanal, perfeita para quem busca exclusividade e sofisticação.</p>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-check text-primary me-2"></i>Materiais: Nobres e exclusivos</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Acabamento: Artesanal</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Design: Exclusivo e sofisticado</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-primary w-100 mt-3">Solicitar orçamento</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Linha Fotográfica 720g -->
+                            <div class="product-item albuns fade-in">
+                                <div class="product-card bg-white h-100 shadow-sm rounded-3 overflow-hidden border-0">
+                                    <div class="position-relative">
+                                        <img src="../imagens/albuns/fotografica_ (1).jpg" 
+                                             alt="Linha Fotográfica 720g" 
+                                             class="img-fluid w-100">
+                                        <button onclick="abrirGaleria('fotografica-720g', 5)" 
+                                                class="btn btn-light position-absolute bottom-0 end-0 m-3">
+                                            <i class="fas fa-images me-2"></i>Ver fotos
+                                        </button>
+                                    </div>
+                                    <div class="p-4">
+                                        <h3>Linha Fotográfica 720g</h3>
+                                        <p>Álbuns impressos em papel fotográfico profissional de alta gramatura, com acabamento fosco ou brilhante.</p>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-check text-primary me-2"></i>Papel: Fotográfico 720g</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Acabamento: Fosco ou brilhante</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Qualidade: Profissional</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-primary w-100 mt-3">Solicitar orçamento</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Linha Premium Layflat 500g -->
+                            <div class="product-item albuns fade-in">
+                                <div class="product-card bg-white h-100 shadow-sm rounded-3 overflow-hidden border-0">
+                                    <div class="position-relative">
+                                        <img src="../imagens/albuns/premium_layflat (2).jpg" 
+                                             alt="Linha Premium Layflat 500g" 
+                                             class="img-fluid w-100">
+                                        <button onclick="abrirGaleria('premium-layflat-500g', 5)" 
+                                                class="btn btn-light position-absolute bottom-0 end-0 m-3">
+                                            <i class="fas fa-images me-2"></i>Ver fotos
+                                        </button>
+                                    </div>
+                                    <div class="p-4">
+                                        <h3>Linha Premium Layflat 500g</h3>
+                                        <p>Álbuns com tecnologia layflat em papel couché de alta gramatura, permitindo imagens panorâmicas perfeitas.</p>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-check text-primary me-2"></i>Papel: Couché 500g</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Tecnologia: Layflat</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Imagens: Panorâmicas perfeitas</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-primary w-100 mt-3">Solicitar orçamento</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Linha Álbuns com Parafuso 250g -->
+                            <div class="product-item albuns fade-in">
+                                <div class="product-card bg-white h-100 shadow-sm rounded-3 overflow-hidden border-0">
+                                    <div class="position-relative">
+                                        <img src="../imagens/albuns/parafuso_ (1).jpg" 
+                                             alt="Linha Álbuns com Parafuso 250g" 
+                                             class="img-fluid w-100">
+                                        <button onclick="abrirGaleria('parafuso-250g', 9)" 
+                                                class="btn btn-light position-absolute bottom-0 end-0 m-3">
+                                            <i class="fas fa-images me-2"></i>Ver fotos
+                                        </button>
+                                    </div>
+                                    <div class="p-4">
+                                        <h3>Linha Álbuns com Parafuso 250g</h3>
+                                        <p>Álbuns com sistema de parafuso, oferecendo durabilidade e facilidade de manuseio, com papel de alta qualidade.</p>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-check text-primary me-2"></i>Papel: 250g</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Sistema: Parafuso</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Durabilidade: Alta</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-primary w-100 mt-3">Solicitar orçamento</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Linha Tradicional 170g -->
+                            <div class="product-item albuns fade-in">
+                                <div class="product-card bg-white h-100 shadow-sm rounded-3 overflow-hidden border-0">
+                                    <div class="position-relative">
+                                        <img src="../imagens/albuns/tradicional_20x20_ (1).jpg" 
+                                             alt="Linha Tradicional 170g" 
+                                             class="img-fluid w-100">
+                                        <button onclick="abrirGaleria('tradicional-170g', 4)" 
+                                                class="btn btn-light position-absolute bottom-0 end-0 m-3">
+                                            <i class="fas fa-images me-2"></i>Ver fotos
+                                        </button>
+                                    </div>
+                                    <div class="p-4">
+                                        <h3>Linha Tradicional 170g</h3>
+                                        <p>Álbuns clássicos com excelente custo-benefício, perfeitos para quem busca qualidade a um preço acessível.</p>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-check text-primary me-2"></i>Papel: 170g</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Acabamento: Clássico</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Custo-benefício: Excelente</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-primary w-100 mt-3">Solicitar orçamento</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Estojo -->
+                    <div class="category-section" data-category="estojos">
+                        <h2 class="text-center mb-4">Estojos</h2>
+                        <div class="products-grid">
+                            <!-- Acrílico Total -->
+                            <div class="product-item estojos fade-in">
+                                <div class="product-card bg-white h-100 shadow-sm rounded-3 overflow-hidden border-0">
+                                    <div class="position-relative">
+                                        <img src="../imagens/estojos/acrilico-total/_ (1).jpg" 
+                                             alt="Estojo Acrílico Total" 
+                                             class="img-fluid w-100">
+                                        <button onclick="abrirGaleria('acrilico-total', 5)" 
+                                                class="btn btn-light position-absolute bottom-0 end-0 m-3">
+                                            <i class="fas fa-images me-2"></i>Ver fotos
+                                        </button>
+                                    </div>
+                                    <div class="p-4">
+                                        <h3>Estojo Acrílico Total</h3>
+                                        <p>Estojo com acabamento 100% em acrílico para proteção e valorização do seu álbum.</p>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-check text-primary me-2"></i>Material: Acrílico de alta qualidade</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Proteção: Total contra impactos</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Design: Moderno e elegante</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-primary w-100 mt-3">Solicitar orçamento</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Personalizado com Foto -->
+                            <div class="product-item estojos fade-in">
+                                <div class="product-card bg-white h-100 shadow-sm rounded-3 overflow-hidden border-0">
+                                    <div class="position-relative">
+                                        <img src="../imagens/estojos/personalizado-com-foto/_ (1).jpg" 
+                                             alt="Estojo Personalizado com Foto" 
+                                             class="img-fluid w-100">
+                                        <button onclick="abrirGaleria('personalizado-com-foto', 6)" 
+                                                class="btn btn-light position-absolute bottom-0 end-0 m-3">
+                                            <i class="fas fa-images me-2"></i>Ver fotos
+                                        </button>
+                                    </div>
+                                    <div class="p-4">
+                                        <h3>Estojo Personalizado com Foto</h3>
+                                        <p>Estojo único com sua foto impressa, tornando seu álbum ainda mais especial.</p>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-check text-primary me-2"></i>Personalização: Foto impressa em alta qualidade</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Material: Acabamento premium</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Design: Totalmente customizável</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-primary w-100 mt-3">Solicitar orçamento</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Parafuso Personalizado -->
+                            <div class="product-item estojos fade-in">
+                                <div class="product-card bg-white h-100 shadow-sm rounded-3 overflow-hidden border-0">
+                                    <div class="position-relative">
+                                        <img src="../imagens/estojos/parafuso-personalizado/_ (1).jpg" 
+                                             alt="Estojo com Parafuso Personalizado" 
+                                             class="img-fluid w-100">
+                                        <button onclick="abrirGaleria('parafuso-personalizado', 8)" 
+                                                class="btn btn-light position-absolute bottom-0 end-0 m-3">
+                                            <i class="fas fa-images me-2"></i>Ver fotos
+                                        </button>
+                                    </div>
+                                    <div class="p-4">
+                                        <h3>Estojo com Parafuso Personalizado</h3>
+                                        <p>Estojo resistente com sistema de parafuso personalizado para maior durabilidade.</p>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-check text-primary me-2"></i>Sistema: Parafuso de alta resistência</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Personalização: Diversas opções</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Durabilidade: Proteção reforçada</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-primary w-100 mt-3">Solicitar orçamento</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tecido Marrom Suede -->
+                            <div class="col-md-6 col-lg-4 product-item estojos fade-in">
+                                <div class="product-card bg-white h-100 shadow-sm rounded-3 overflow-hidden border-0">
+                                    <div class="position-relative">
+                                        <img src="../imagens/estojos/tecido-25x25-marrom-suede/_ (1).jpg" 
+                                             alt="Estojo Tecido Marrom Suede" 
+                                             class="img-fluid w-100">
+                                        <button onclick="abrirGaleria('tecido-25x25-marrom-suede', 7)" 
+                                                class="btn btn-light position-absolute bottom-0 end-0 m-3">
+                                            <i class="fas fa-images me-2"></i>Ver fotos
+                                        </button>
+                                    </div>
+                                    <div class="p-4">
+                                        <h3>Estojo Tecido Marrom Suede</h3>
+                                        <p>Estojo em tecido suede marrom, oferecendo um visual clássico e sofisticado.</p>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-check text-primary me-2"></i>Material: Tecido suede marrom</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Acabamento: Premium</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Design: Clássico e elegante</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-primary w-100 mt-3">Solicitar orçamento</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tecido Bege Suede -->
+                            <div class="col-md-6 col-lg-4 product-item estojos fade-in">
+                                <div class="product-card bg-white h-100 shadow-sm rounded-3 overflow-hidden border-0">
+                                    <div class="position-relative">
+                                        <img src="../imagens/estojos/tecido-25x25-bege-suede/_ (1).jpg" 
+                                             alt="Estojo Tecido Bege Suede" 
+                                             class="img-fluid w-100">
+                                        <button onclick="abrirGaleria('tecido-25x25-bege-suede', 6)" 
+                                                class="btn btn-light position-absolute bottom-0 end-0 m-3">
+                                            <i class="fas fa-images me-2"></i>Ver fotos
+                                        </button>
+                                    </div>
+                                    <div class="p-4">
+                                        <h3>Estojo Tecido Bege Suede</h3>
+                                        <p>Estojo em tecido suede bege, combinando elegância e proteção.</p>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-check text-primary me-2"></i>Material: Tecido suede bege</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Acabamento: Premium</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Design: Sofisticado</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-primary w-100 mt-3">Solicitar orçamento</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Madeira -->
+                            <div class="col-md-6 col-lg-4 product-item estojos fade-in">
+                                <div class="product-card bg-white h-100 shadow-sm rounded-3 overflow-hidden border-0">
+                                    <div class="position-relative">
+                                        <img src="../imagens/estojos/madeira/_ (1).jpg" 
+                                             alt="Estojo de Madeira" 
+                                             class="img-fluid w-100">
+                                        <button onclick="abrirGaleria('madeira', 7)" 
+                                                class="btn btn-light position-absolute bottom-0 end-0 m-3">
+                                            <i class="fas fa-images me-2"></i>Ver fotos
+                                        </button>
+                                    </div>
+                                    <div class="p-4">
+                                        <h3>Estojo de Madeira</h3>
+                                        <p>Estojo premium confeccionado em madeira nobre, com acabamento artesanal de alta qualidade.</p>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-check text-primary me-2"></i>Material: Madeira nobre</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Acabamento: Artesanal</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Design: Exclusivo</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-primary w-100 mt-3">Solicitar orçamento</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Couro Tipo Maleta -->
+                            <div class="col-md-6 col-lg-4 product-item estojos fade-in">
+                                <div class="product-card bg-white h-100 shadow-sm rounded-3 overflow-hidden border-0">
+                                    <div class="position-relative">
+                                        <img src="../imagens/estojos/couro-tipo-maleta/_ (1).jpg" 
+                                             alt="Estojo Couro Tipo Maleta" 
+                                             class="img-fluid w-100">
+                                        <button onclick="abrirGaleria('couro-tipo-maleta', 5)" 
+                                                class="btn btn-light position-absolute bottom-0 end-0 m-3">
+                                            <i class="fas fa-images me-2"></i>Ver fotos
+                                        </button>
+                                    </div>
+                                    <div class="p-4">
+                                        <h3>Estojo Couro Tipo Maleta</h3>
+                                        <p>Estojo em couro com design de maleta, oferecendo proteção e estilo.</p>
+                                        <ul class="list-unstyled mt-3">
+                                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Material: Couro de alta qualidade</li>
+                                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Design: Tipo maleta</li>
+                                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Proteção: Reforçada</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-outline-primary w-100 mt-3">Solicitar orçamento</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Básico Texturizado Preto -->
+                            <div class="col-md-6 col-lg-4 product-item estojos fade-in">
+                                <div class="product-card bg-white h-100 shadow-sm rounded-3 overflow-hidden border-0">
+                                    <div class="position-relative">
+                                        <img src="../imagens/estojos/basico-texturizado-preto/_ (1).jpg" 
+                                             alt="Estojo Básico Texturizado Preto" 
+                                             class="img-fluid w-100">
+                                        <button onclick="abrirGaleria('basico-texturizado-preto', 9)" 
+                                                class="btn btn-light position-absolute bottom-0 end-0 m-3">
+                                            <i class="fas fa-images me-2"></i>Ver fotos
+                                        </button>
+                                    </div>
+                                    <div class="p-4">
+                                        <h3>Estojo Básico Texturizado Preto</h3>
+                                        <p>Estojo em material texturizado preto, oferecendo proteção e estilo a um custo acessível.</p>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-check text-primary me-2"></i>Material: Texturizado preto</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Acabamento: Básico</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Custo-benefício: Excelente</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-primary w-100 mt-3">Solicitar orçamento</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Básico Texturizado Courino -->
+                            <div class="col-md-6 col-lg-4 product-item estojos fade-in">
+                                <div class="product-card bg-white h-100 shadow-sm rounded-3 overflow-hidden border-0">
+                                    <div class="position-relative">
+                                        <img src="../imagens/estojos/basico-texturizado-courino/_ (1).jpg" 
+                                             alt="Estojo Básico Texturizado Courino" 
+                                             class="img-fluid w-100">
+                                        <button onclick="abrirGaleria('basico-texturizado-courino', 7)" 
+                                                class="btn btn-light position-absolute bottom-0 end-0 m-3">
+                                            <i class="fas fa-images me-2"></i>Ver fotos
+                                        </button>
+                                    </div>
+                                    <div class="p-4">
+                                        <h3>Estojo Básico Texturizado Courino</h3>
+                                        <p>Estojo em courino com textura especial, oferecendo proteção e estilo a um custo acessível.</p>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-check text-primary me-2"></i>Material: Courino texturizado</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Acabamento: Básico</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Custo-benefício: Excelente</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-primary w-100 mt-3">Solicitar orçamento</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tampa Acrílica -->
+                            <div class="col-md-6 col-lg-4 product-item estojos fade-in">
+                                <div class="product-card bg-white h-100 shadow-sm rounded-3 overflow-hidden border-0">
+                                    <div class="position-relative">
+                                        <img src="../imagens/estojos/tampa-acrilica/_ (1).jpg" 
+                                             alt="Estojo com Tampa Acrílica" 
+                                             class="img-fluid w-100">
+                                        <button onclick="abrirGaleria('tampa-acrilica', 5)" 
+                                                class="btn btn-light position-absolute bottom-0 end-0 m-3">
+                                            <i class="fas fa-images me-2"></i>Ver fotos
+                                        </button>
+                                    </div>
+                                    <div class="p-4">
+                                        <h3>Estojo com Tampa Acrílica</h3>
+                                        <p>Estojo com tampa em acrílico transparente, combinando elegância e visibilidade do conteúdo.</p>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-check text-primary me-2"></i>Tampa: Acrílico transparente</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Design: Moderno</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Visibilidade: Total do conteúdo</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-primary w-100 mt-3">Solicitar orçamento</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Porta-retrato -->
+                            <div class="col-md-6 col-lg-4 product-item estojos fade-in">
+                                <div class="product-card bg-white h-100 shadow-sm rounded-3 overflow-hidden border-0">
+                                    <div class="position-relative">
+                                        <img src="../imagens/estojos/porta-retrato/_ (1).jpg" 
+                                             alt="Estojo Porta-retrato" 
+                                             class="img-fluid w-100">
+                                        <button onclick="abrirGaleria('porta-retrato', 5)" 
+                                                class="btn btn-light position-absolute bottom-0 end-0 m-3">
+                                            <i class="fas fa-images me-2"></i>Ver fotos
+                                        </button>
+                                    </div>
+                                    <div class="p-4">
+                                        <h3>Estojo Porta-retrato</h3>
+                                        <p>Estojo especial que funciona como porta-retrato, permitindo exibir suas memórias com estilo.</p>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-check text-primary me-2"></i>Função: Porta-retrato integrado</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Design: 2 em 1</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Versatilidade: Decorativo e funcional</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-primary w-100 mt-3">Solicitar orçamento</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Acessórios -->
+                    <div class="category-section" data-category="acessorios">
+                        <h2 class="text-center mb-4">Acessórios</h2>
+                        <div class="products-grid">
+                            <!-- Camisa -->
+                            <div class="product-item acessorios fade-in">
+                                <div class="product-card bg-white h-100 shadow-sm rounded-3 overflow-hidden border-0">
+                                    <div class="position-relative">
+                                        <img src="../imagens/acessorios/camisa/_ (1).jpg" 
+                                             alt="Camisa de Formatura" 
+                                             class="img-fluid w-100">
+                                        <button onclick="abrirGaleria('acessorios/camisa', 4)" 
+                                                class="btn btn-light position-absolute bottom-0 end-0 m-3">
+                                            <i class="fas fa-images me-2"></i>Ver fotos
+                                        </button>
+                                    </div>
+                                    <div class="p-4">
+                                        <h3>Camisa de Formatura</h3>
+                                        <p>Camisa personalizada para formandos, com design exclusivo e alta qualidade.</p>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-check text-primary me-2"></i>Material: Algodão premium</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Personalização: Nome e curso</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Conforto: Tecido respirável</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-primary w-100 mt-3">Solicitar orçamento</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Ecobag Preta -->
+                            <div class="product-item acessorios fade-in">
+                                <div class="product-card bg-white h-100 shadow-sm rounded-3 overflow-hidden border-0">
+                                    <div class="position-relative">
+                                        <img src="../imagens/acessorios/ecobag-preta/_ (1).jpg" 
+                                             alt="Ecobag Preta" 
+                                             class="img-fluid w-100">
+                                        <button onclick="abrirGaleria('acessorios/ecobag-preta', 4)" 
+                                                class="btn btn-light position-absolute bottom-0 end-0 m-3">
+                                            <i class="fas fa-images me-2"></i>Ver fotos
+                                        </button>
+                                    </div>
+                                    <div class="p-4">
+                                        <h3>Ecobag Preta</h3>
+                                        <p>Ecobag sustentável em tecido preto, perfeita para carregar seus pertences com estilo.</p>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-check text-primary me-2"></i>Material: Tecido resistente</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Personalização: Nome e logo</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Sustentabilidade: Reutilizável</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-primary w-100 mt-3">Solicitar orçamento</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Ecobag Branca -->
+                            <div class="product-item acessorios fade-in">
+                                <div class="product-card bg-white h-100 shadow-sm rounded-3 overflow-hidden border-0">
+                                    <div class="position-relative">
+                                        <img src="../imagens/acessorios/ecobag-branca/_ (1).jpg" 
+                                             alt="Ecobag Branca" 
+                                             class="img-fluid w-100">
+                                        <button onclick="abrirGaleria('acessorios/ecobag-branca', 4)" 
+                                                class="btn btn-light position-absolute bottom-0 end-0 m-3">
+                                            <i class="fas fa-images me-2"></i>Ver fotos
+                                        </button>
+                                    </div>
+                                    <div class="p-4">
+                                        <h3>Ecobag Branca</h3>
+                                        <p>Ecobag sustentável em tecido branco, ideal para um visual clean e moderno.</p>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-check text-primary me-2"></i>Material: Tecido resistente</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Personalização: Nome e logo</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Sustentabilidade: Reutilizável</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-primary w-100 mt-3">Solicitar orçamento</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Mini Álbum -->
+                            <div class="product-item acessorios fade-in">
+                                <div class="product-card bg-white h-100 shadow-sm rounded-3 overflow-hidden border-0">
+                                    <div class="position-relative">
+                                        <img src="../imagens/acessorios/mini-album/_ (1).jpg" 
+                                             alt="Mini Álbum" 
+                                             class="img-fluid w-100">
+                                        <button onclick="abrirGaleria('acessorios/mini-album', 4)" 
+                                                class="btn btn-light position-absolute bottom-0 end-0 m-3">
+                                            <i class="fas fa-images me-2"></i>Ver fotos
+                                        </button>
+                                    </div>
+                                    <div class="p-4">
+                                        <h3>Mini Álbum</h3>
+                                        <p>Álbum compacto e elegante, perfeito para presentear e guardar as melhores lembranças.</p>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-check text-primary me-2"></i>Formato: Compacto</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Personalização: Capa personalizada</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Praticidade: Fácil de carregar</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-primary w-100 mt-3">Solicitar orçamento</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Poster Vintage Clássica -->
+                            <div class="product-item acessorios fade-in">
+                                <div class="product-card bg-white h-100 shadow-sm rounded-3 overflow-hidden border-0">
+                                    <div class="position-relative">
+                                        <img src="../imagens/acessorios/vintage-classica/_ (1).jpg" 
+                                             alt="Poster Vintage Clássica" 
+                                             class="img-fluid w-100">
+                                        <button onclick="abrirGaleria('acessorios/vintage-classica', 4)" 
+                                                class="btn btn-light position-absolute bottom-0 end-0 m-3">
+                                            <i class="fas fa-images me-2"></i>Ver fotos
+                                        </button>
+                                    </div>
+                                    <div class="p-4">
+                                        <h3>Poster Vintage Clássica</h3>
+                                        <p>Poster em estilo vintage com design clássico, perfeito para decorar seu espaço.</p>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-check text-primary me-2"></i>Estilo: Vintage clássico</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Personalização: Nome e curso</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Qualidade: Impressão premium</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-primary w-100 mt-3">Solicitar orçamento</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Poster Vintage IMA -->
+                            <div class="product-item acessorios fade-in">
+                                <div class="product-card bg-white h-100 shadow-sm rounded-3 overflow-hidden border-0">
+                                    <div class="position-relative">
+                                        <img src="../imagens/acessorios/vintage-ima/_ (1).jpg" 
+                                             alt="Poster Vintage IMA" 
+                                             class="img-fluid w-100">
+                                        <button onclick="abrirGaleria('acessorios/vintage-ima', 4)" 
+                                                class="btn btn-light position-absolute bottom-0 end-0 m-3">
+                                            <i class="fas fa-images me-2"></i>Ver fotos
+                                        </button>
+                                    </div>
+                                    <div class="p-4">
+                                        <h3>Poster Vintage IMA</h3>
+                                        <p>Poster em estilo vintage com design IMA, trazendo um toque especial à sua decoração.</p>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-check text-primary me-2"></i>Estilo: Vintage IMA</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Personalização: Nome e curso</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Qualidade: Impressão premium</li>
+                                        </ul>
+                                        <a href="#" class="btn btn-primary w-100 mt-3">Solicitar orçamento</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Serviços -->
+                    <div class="category-section" data-category="servicos">
+                        <h2 class="text-center mb-4">Serviços</h2>
+                        <div class="products-grid">
+                            <!-- Formaturas Pay -->
+                            <div class="product-item servicos fade-in">
+                                <div class="product-card bg-white h-100 shadow-sm rounded-3 overflow-hidden border-0">
+                                    <div class="position-relative">
+                                        <img src="../imagens/servicos/formaturas-pay/_ (1).jpg" 
+                                             alt="Formaturas Pay - Sistema de pagamento recorrente" 
+                                             class="img-fluid w-100">
+                                        <button onclick="abrirGaleria('servicos/formaturas-pay', 4)" 
+                                                class="btn btn-light position-absolute bottom-0 end-0 m-3">
+                                            <i class="fas fa-images me-2"></i>Ver fotos
+                                        </button>
+                                    </div>
+                                    <div class="p-4">
+                                        <h3>Formaturas Pay</h3>
+                                        <p>Sistema de pagamento recorrente que facilita a venda de álbuns com parcelas mensais no cartão.</p>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-check text-primary me-2"></i>Recorrência automática</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Retentativas por 60 dias</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Sem comprometer limite total</li>
+                                        </ul>
+                                        <a href="taxas-financeiras.html" class="btn btn-primary w-100 mt-3">Saiba mais</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Sistema de Separação -->
+                            <div class="product-item servicos fade-in">
+                                <div class="product-card bg-white h-100 shadow-sm rounded-3 overflow-hidden border-0">
+                                    <div class="position-relative">
+                                        <img src="../imagens/servicos/sistema-separacao/_ (1).jpg" 
+                                             alt="Sistema de Separação - Tecnologia de reconhecimento facial" 
+                                             class="img-fluid w-100">
+                                        <button onclick="abrirGaleria('servicos/sistema-separacao', 4)" 
+                                                class="btn btn-light position-absolute bottom-0 end-0 m-3">
+                                            <i class="fas fa-images me-2"></i>Ver fotos
+                                        </button>
+                                    </div>
+                                    <div class="p-4">
+                                        <h3>Sistema de Separação</h3>
+                                        <p>Tecnologia de reconhecimento facial que separa automaticamente as fotos por formando.</p>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-check text-primary me-2"></i>Economia de até 90% de tempo</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Inteligência Artificial AWS</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Processamento automático</li>
+                                        </ul>
+                                        <a href="funcionalidades.html" class="btn btn-primary w-100 mt-3">Saiba mais</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Plataforma Meus Álbuns -->
+                            <div class="product-item servicos fade-in">
+                                <div class="product-card bg-white h-100 shadow-sm rounded-3 overflow-hidden border-0">
+                                    <div class="position-relative">
+                                        <img src="../imagens/servicos/plafatorma-meus-albuns/_ (1).jpg" 
+                                             alt="Plataforma Meus Álbuns - Gestão completa de pedidos" 
+                                             class="img-fluid w-100">
+                                        <button onclick="abrirGaleria('servicos/plafatorma-meus-albuns', 4)" 
+                                                class="btn btn-light position-absolute bottom-0 end-0 m-3">
+                                            <i class="fas fa-images me-2"></i>Ver fotos
+                                        </button>
+                                    </div>
+                                    <div class="p-4">
+                                        <h3>Plataforma Meus Álbuns</h3>
+                                        <p>Plataforma completa para gestão de pedidos e acompanhamento de produção.</p>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-check text-primary me-2"></i>Gestão de pedidos</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Acompanhamento em tempo real</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Interface intuitiva</li>
+                                        </ul>
+                                        <a href="plataforma.html" class="btn btn-primary w-100 mt-3">Saiba mais</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Sistema de Diagramação -->
+                            <div class="product-item servicos fade-in">
+                                <div class="product-card bg-white h-100 shadow-sm rounded-3 overflow-hidden border-0">
+                                    <div class="position-relative">
+                                        <img src="../imagens/servicos/sistema-diagramacao/_ (1).jpg" 
+                                             alt="Sistema de Diagramação - Editor online intuitivo" 
+                                             class="img-fluid w-100">
+                                        <button onclick="abrirGaleria('servicos/sistema-diagramacao', 4)" 
+                                                class="btn btn-light position-absolute bottom-0 end-0 m-3">
+                                            <i class="fas fa-images me-2"></i>Ver fotos
+                                        </button>
+                                    </div>
+                                    <div class="p-4">
+                                        <h3>Sistema de Diagramação</h3>
+                                        <p>Editor online intuitivo para criação e diagramação de álbuns.</p>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-check text-primary me-2"></i>Interface amigável</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Templates prontos</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Salvamento automático</li>
+                                        </ul>
+                                        <a href="diagramacao.html" class="btn btn-primary w-100 mt-3">Saiba mais</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Seções fixas (sempre visíveis) -->
+                <div class="fixed-section">
+                    <!-- CTA -->
+                    <div class="row">
+                        <div class="col-md-10 mx-auto category-heading" data-category="all">
+                            <div class="bg-light p-5 rounded-3 shadow-sm text-center">
+                                <h3 class="fw-bold mb-4">Pronto para oferecer os melhores produtos aos seus clientes?</h3>
+                                <p class="lead mb-4">Nossa equipe está pronta para esclarecer todas as suas dúvidas e ajudar você a encontrar a solução ideal para o seu negócio.</p>
+                                <div class="d-grid">
+                                    <a href="cadastro.html" class="btn btn-primary btn-lg px-4">
+                                        <i class="fas fa-headset me-2"></i> Falar com um consultor
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="bg-primary text-white py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="display-6 fw-bold mb-4">Pronto para transformar seu negócio de formaturas?</h2>
+                        <p class="lead mb-4">Faça seu cadastro agora e comece a oferecer produtos exclusivos com a qualidade Pixel.</p>
+                        <a href="cadastro.html" class="btn btn-light btn-lg">COMEÇAR AGORA</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>Pixel Formaturas</h5>
+                    <p>A melhor solução para formaturas do grupo Pixel House. Desde 2004, oferecemos soluções rápidas e fáceis para revelação digital e fotoprodutos personalizados.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html" class="text-light">Início</a></li>
+                        <li><a href="funcionalidades.html" class="text-light">Funcionalidades</a></li>
+                        <li><a href="produtos.html" class="text-light">Produtos</a></li>
+                        <li><a href="family-day.html" class="text-light">Family Day</a></li>
+                        <li><a href="taxas-financeiras.html" class="text-light">Taxas Financeiras</a></li>
+                        <li><a href="quem-somos.html" class="text-light">Quem Somos</a></li>
+                        <li><a href="contatos.html" class="text-light">Contatos</a></li>
+                        <li><a href="https://www.meusalbunsdeformatura.com.br" class="text-light">Área do Parceiro</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Contato</h5>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> Alameda Surubiju, 1850, Alphaville Industrial, Barueri - SP, 06455-040</p>
+                        <p><i class="fas fa-phone me-2"></i> (11) 3509-5299</p>
+                        <p><i class="fas fa-clock me-2"></i> Atendimento de 2ª a 6ª, das 09h às 18h</p>
+                    </address>
+                    <div class="mt-3">
+                        <a href="https://www.facebook.com/pixelformaturas" target="_blank" class="me-2 text-light"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/pixelformaturas" target="_blank" class="me-2 text-light"><i class="fab fa-instagram"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=551135095299" target="_blank" class="text-light"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>Copyright 2024: Pixel House Soluções em Imagem :: CNPJ 06.251.204/0001-81</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="whatsapp-float">
+        <a href="https://api.whatsapp.com/send?phone=551135095299" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Filtro de produtos por categoria
+        const filterButtons = document.querySelectorAll('.filter-button');
+        const productItems = document.querySelectorAll('.product-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove classe active de todos os botões
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Adiciona classe active ao botão clicado
+                button.classList.add('active');
+
+                const category = button.getAttribute('data-filter');
+
+                productItems.forEach(item => {
+                    if (category === 'all' || item.classList.contains(category)) {
+                        item.style.display = 'block';
+                        // Adiciona classe para animação
+                        setTimeout(() => {
+                            item.classList.add('fade-in');
+                        }, 10);
+                    } else {
+                        item.style.display = 'none';
+                        item.classList.remove('fade-in');
+                    }
+                });
+            });
+        });
+
+        // Animação de fade-in inicial
+        productItems.forEach(item => {
+            item.classList.add('fade-in');
+        });
+
+        // Fecha a galeria ao pressionar ESC
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                const gallery = document.querySelector('.product-gallery');
+                if (gallery) {
+                    gallery.classList.remove('active');
+                    setTimeout(() => {
+                        gallery.remove();
+                        document.body.style.overflow = '';
+                    }, 300);
+                }
+            }
+        });
+
+        // Fecha a galeria ao clicar fora dela
+        document.addEventListener('click', function(e) {
+            const gallery = document.querySelector('.product-gallery');
+            if (gallery && !e.target.closest('.gallery-container') && !e.target.closest('.btn-view-photos')) {
+                gallery.classList.remove('active');
+                setTimeout(() => {
+                    gallery.remove();
+                    document.body.style.overflow = '';
+                }, 300);
+            }
+        });
+    });
+
+    // Adiciona estilos para animação
+    const style = document.createElement('style');
+    style.textContent = `
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 0.5s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .product-item {
+            transition: all 0.3s ease;
+        }
+
+        .product-gallery {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 1060;
+            display: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .product-gallery.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .gallery-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 2rem;
+            position: relative;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .gallery-close:hover {
+            transform: rotate(90deg);
+        }
+
+        .product-card .btn-view-photos {
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            color: var(--primary-color);
+            backdrop-filter: blur(4px);
+            transition: all 0.3s ease;
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        .product-card:hover .btn-view-photos {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .btn-view-photos:hover {
+            background: white;
+            transform: translateY(-2px);
+        }
+    `;
+
+    document.head.appendChild(style);
+    </script>
+
+    <script>
+    function toggleDetails(detailsId) {
+        const detailsElement = document.getElementById(detailsId);
+        const allDetails = document.querySelectorAll('.product-details');
+        
+        // Fecha todos os outros detalhes abertos
+        allDetails.forEach(detail => {
+            if (detail.id !== detailsId && detail.style.display !== 'none') {
+                detail.style.display = 'none';
+            }
+        });
+        
+        // Alterna a visibilidade do detalhe clicado
+        if (detailsElement.style.display === 'none') {
+            detailsElement.style.display = 'block';
+            // Rola suavemente até a seção de detalhes
+            detailsElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+            detailsElement.style.display = 'none';
+        }
+    }
+
+    function toggleProductDetails(button) {
+        const card = button.closest('.product-card');
+        const detailsWrapper = card.querySelector('.product-details-wrapper');
+        const icon = button.querySelector('i');
+        
+        if (detailsWrapper.style.display === 'none') {
+            detailsWrapper.style.display = 'block';
+            setTimeout(() => {
+                detailsWrapper.classList.add('expanded');
+                card.classList.add('expanded');
+                button.classList.add('active');
+            }, 10);
+        } else {
+            detailsWrapper.classList.remove('expanded');
+            card.classList.remove('expanded');
+            button.classList.remove('active');
+            setTimeout(() => {
+                detailsWrapper.style.display = 'none';
+            }, 300);
+        }
+    }
+    </script>
+
+    <script>
+    function showGallery(button, folder, numImages) {
+        const modal = document.createElement('div');
+        modal.className = 'modal fade';
+        modal.id = 'galleryModal';
+        modal.setAttribute('tabindex', '-1');
+        
+        let imagesHtml = '';
+        for (let i = 1; i <= numImages; i++) {
+            imagesHtml += `
+                <div class="col-md-4 mb-3">
+                    <img src="../imagens/estojos/${folder}/_ (${i}).jpg" 
+                         alt="Imagem ${i}" 
+                         class="img-fluid rounded shadow-sm gallery-img" 
+                         onclick="showFullImage(this.src)">
+                </div>`;
+        }
+        
+        modal.innerHTML = `
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content border-0">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title">Galeria de Fotos</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">${imagesHtml}</div>
+                    </div>
+                </div>
+            </div>`;
+        
+        document.body.appendChild(modal);
+        const modalInstance = new bootstrap.Modal(modal);
+        modalInstance.show();
+        
+        modal.addEventListener('hidden.bs.modal', function () {
+            modal.remove();
+        });
+    }
+
+    function showFullImage(src) {
+        const modal = document.createElement('div');
+        modal.className = 'modal fade';
+        modal.id = 'fullImageModal';
+        modal.setAttribute('tabindex', '-1');
+        
+        modal.innerHTML = `
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content bg-transparent border-0">
+                    <div class="text-end p-2">
+                        <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"></button>
+                    </div>
+                    <img src="${src}" class="img-fluid" alt="Imagem ampliada">
+                </div>
+            </div>`;
+        
+        document.body.appendChild(modal);
+        const modalInstance = new bootstrap.Modal(modal);
+        modalInstance.show();
+        
+        modal.addEventListener('hidden.bs.modal', function () {
+            modal.remove();
+        });
+    }
+    </script>
+
+    <style>
+    .btn-gallery {
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(5px);
+        border: none;
+        transition: all 0.3s ease;
+    }
+
+    .btn-gallery:hover {
+        background: white;
+        transform: translateY(-2px);
+    }
+
+    .gallery-img {
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .gallery-img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1) !important;
+    }
+
+    #fullImageModal .modal-content {
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    #fullImageModal .btn-close {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        z-index: 1050;
+    }
+    </style>
+
+    <style>
+    .product-gallery {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: 1060;
+        display: none;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .product-gallery.active {
+        display: flex;
+        opacity: 1;
+    }
+
+    .gallery-container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 2rem;
+        position: relative;
+    }
+
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .gallery-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover img {
+        transform: scale(1.05);
+    }
+
+    .gallery-close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: white;
+        border: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+
+    .gallery-close:hover {
+        transform: rotate(90deg);
+    }
+
+    .product-card .btn-view-photos {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        background: rgba(255, 255, 255, 0.9);
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 50px;
+        font-size: 0.875rem;
+        color: var(--primary-color);
+        backdrop-filter: blur(4px);
+        transition: all 0.3s ease;
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    .product-card:hover .btn-view-photos {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .btn-view-photos:hover {
+        background: white;
+        transform: translateY(-2px);
+    }
+    </style>
+
+    <script>
+    function openGallery(folder, numImages) {
+        console.log('Abrindo galeria:', folder, 'com', numImages, 'imagens');
+        
+        // Remove galeria anterior se existir
+        const oldGallery = document.querySelector('.product-gallery');
+        if (oldGallery) {
+            oldGallery.remove();
+        }
+
+        // Cria nova galeria
+        const gallery = document.createElement('div');
+        gallery.className = 'product-gallery';
+        
+        let imagesHtml = '';
+        for (let i = 1; i <= numImages; i++) {
+            const imagePath = `../imagens/estojos/${folder}/_ (${i}).jpg`;
+            console.log('Carregando imagem:', imagePath);
+            
+            imagesHtml += `
+                <div class="gallery-item">
+                    <img src="${imagePath}" 
+                         alt="Foto ${i} do ${folder.replace(/-/g, ' ')}"
+                         loading="lazy"
+                         onerror="console.error('Erro ao carregar imagem:', this.src)"
+                         onclick="showFullImage(this.src)">
+                </div>`;
+        }
+        
+        gallery.innerHTML = `
+            <div class="gallery-container">
+                <button class="gallery-close" onclick="closeGallery()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <h3 class="gallery-title text-white mb-4">${folder.replace(/-/g, ' ').toUpperCase()}</h3>
+                <div class="gallery-grid">
+                    ${imagesHtml}
+                </div>
+            </div>`;
+        
+        document.body.appendChild(gallery);
+        document.body.style.overflow = 'hidden';
+        
+        // Ativa a galeria após um pequeno delay para a animação funcionar
+        setTimeout(() => {
+            gallery.classList.add('active');
+        }, 10);
+    }
+
+    // Atualiza o caminho da imagem principal do estojo acrílico
+    const estojoAcrilico = document.querySelector('[alt="Estojo Acrílico Total"]');
+    if (estojoAcrilico) {
+        console.log('Atualizando imagem principal do estojo acrílico');
+        estojoAcrilico.src = '../imagens/estojos/acrilico-total/_ (1).jpg';
+        estojoAcrilico.onerror = function() {
+            console.error('Erro ao carregar imagem principal:', this.src);
+        };
+    }
+
+    // Adiciona função para testar caminhos das imagens
+    function testImagePath(path) {
+        return new Promise((resolve, reject) => {
+            const img = new Image();
+            img.onload = () => resolve(true);
+            img.onerror = () => reject(false);
+            img.src = path;
+        });
+    }
+
+    // Testa os caminhos das imagens ao carregar a página
+    document.addEventListener('DOMContentLoaded', async function() {
+        try {
+            const testPath = '../imagens/estojos/acrilico-total/_ (1).jpg';
+            console.log('Testando caminho da imagem:', testPath);
+            await testImagePath(testPath);
+            console.log('Imagem carregada com sucesso:', testPath);
+        } catch (error) {
+            console.error('Erro ao testar caminho da imagem:', error);
+        }
+    });
+
+    function showFullImage(src) {
+        const fullImage = document.createElement('div');
+        fullImage.className = 'product-gallery active';
+        fullImage.style.background = 'rgba(0, 0, 0, 0.95)';
+        
+        fullImage.innerHTML = `
+            <div class="gallery-container" style="display: flex; align-items: center; justify-content: center;">
+                <button class="gallery-close" onclick="this.parentElement.parentElement.remove(); document.body.style.overflow = '';">
+                    <i class="fas fa-times"></i>
+                </button>
+                <img src="${src}" style="max-height: 90vh; max-width: 90vw; object-fit: contain;">
+            </div>`;
+        
+        document.body.appendChild(fullImage);
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeGallery() {
+        const gallery = document.querySelector('.product-gallery');
+        if (gallery) {
+            gallery.classList.remove('active');
+            setTimeout(() => {
+                gallery.remove();
+                document.body.style.overflow = '';
+            }, 300);
+        }
+    }
+
+    // Adiciona estilos para a galeria
+    const galleryStyles = document.createElement('style');
+    galleryStyles.textContent = `
+        .product-gallery {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 1060;
+            display: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .product-gallery.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .gallery-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 2rem;
+            position: relative;
+            width: 100%;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            padding: 1rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            aspect-ratio: 1;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            z-index: 1;
+        }
+
+        .gallery-close:hover {
+            transform: rotate(90deg);
+            background: white;
+        }
+
+        .gallery-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 2rem;
+            text-transform: capitalize;
+            color: white;
+        }
+    `;
+    document.head.appendChild(galleryStyles);
+    </script>
+
+    <style>
+    .gallery-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 2rem;
+        text-transform: capitalize;
+    }
+
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+
+    .gallery-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        transition: all 0.3s ease;
+    }
+
+    .gallery-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover img {
+        transform: scale(1.05);
+    }
+
+    .gallery-close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: rgba(255, 255, 255, 0.9);
+        border: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        z-index: 1;
+    }
+
+    .gallery-close:hover {
+        transform: rotate(90deg);
+        background: white;
+    }
+    </style>
+
+    <style>
+    .product-image {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .product-image img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s ease;
+    }
+
+    .btn-view-photos {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        background: rgba(255, 255, 255, 0.9);
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 50px;
+        font-size: 0.875rem;
+        color: var(--primary-color);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: all 0.3s ease;
+        z-index: 10;
+        opacity: 0;
+    }
+
+    .product-image:hover .btn-view-photos {
+        opacity: 1;
+    }
+
+    .btn-view-photos:hover {
+        background: white;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .product-image:hover img {
+        transform: scale(1.05);
+    }
+    </style>
+
+    <style>
+    /* Estilos para a galeria */
+    .modal-gallery {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: 9999;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .modal-gallery.show {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal-gallery-content {
+        max-width: 1200px;
+        width: 100%;
+        margin: auto;
+        position: relative;
+    }
+
+    .modal-gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .modal-gallery-item {
+        position: relative;
+        aspect-ratio: 1;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .modal-gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .modal-gallery-item:hover img {
+        transform: scale(1.05);
+    }
+
+    .modal-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: white;
+        border: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        transition: transform 0.3s ease;
+    }
+
+    .modal-close:hover {
+        transform: rotate(90deg);
+    }
+
+    .modal-title {
+        color: white;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    /* Estilos para o botão Ver Fotos */
+    .product-image {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .btn-gallery {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        background: rgba(255,255,255,0.9);
+        color: #333;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        opacity: 0;
+        transform: translateY(10px);
+        transition: all 0.3s ease;
+    }
+
+    .product-image:hover .btn-gallery {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .btn-gallery:hover {
+        background: white;
+        transform: translateY(-2px);
+    }
+    </style>
+
+    <script>
+    function openGallery(folder, numImages) {
+        // Criar o modal
+        const modal = document.createElement('div');
+        modal.className = 'modal-gallery';
+        
+        let imagesHtml = '';
+        for (let i = 1; i <= numImages; i++) {
+            imagesHtml += `
+                <div class="modal-gallery-item">
+                    <img src="../imagens/estojos/${folder}/_ (${i}).jpg" 
+                         alt="Foto ${i}" 
+                         loading="lazy">
+                </div>`;
+        }
+        
+        modal.innerHTML = `
+            <div class="modal-gallery-content">
+                <h2 class="modal-title">${folder.replace(/-/g, ' ').toUpperCase()}</h2>
+                <button class="modal-close" onclick="closeGallery(this)">×</button>
+                <div class="modal-gallery-grid">
+                    ${imagesHtml}
+                </div>
+            </div>`;
+        
+        document.body.appendChild(modal);
+        document.body.style.overflow = 'hidden';
+        
+        // Adicionar classe show após um pequeno delay para a animação funcionar
+        setTimeout(() => modal.classList.add('show'), 10);
+    }
+
+    function closeGallery(button) {
+        const modal = button.closest('.modal-gallery');
+        modal.classList.remove('show');
+        setTimeout(() => {
+            modal.remove();
+            document.body.style.overflow = '';
+        }, 300);
+    }
+
+    // Fechar galeria ao pressionar ESC
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            const modal = document.querySelector('.modal-gallery');
+            if (modal) {
+                closeGallery(modal.querySelector('.modal-close'));
+            }
+        }
+    });
+    </script>
+
+    <style>
+    .galeria-modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.95);
+        z-index: 9999;
+        display: none;
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    .galeria-modal.ativo {
+        display: flex;
+        opacity: 1;
+    }
+
+    .galeria-conteudo {
+        max-width: 1400px;
+        width: 100%;
+        margin: 40px auto;
+        position: relative;
+        padding: 0 40px;
+    }
+
+    .galeria-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+        padding: 20px 0;
+    }
+
+    .galeria-item {
+        aspect-ratio: 1;
+        overflow: hidden;
+        border-radius: 12px;
+        position: relative;
+        cursor: zoom-in;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 0.5s ease forwards;
+    }
+
+    .galeria-item:nth-child(1) { animation-delay: 0.1s; }
+    .galeria-item:nth-child(2) { animation-delay: 0.2s; }
+    .galeria-item:nth-child(3) { animation-delay: 0.3s; }
+    .galeria-item:nth-child(4) { animation-delay: 0.4s; }
+
+    .galeria-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+    }
+
+    .galeria-item:hover img {
+        transform: scale(1.05);
+    }
+
+    .fechar-galeria {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: transparent;
+        border: 2px solid white;
+        color: white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        z-index: 10000;
+    }
+
+    .fechar-galeria:hover {
+        background: white;
+        color: black;
+        transform: rotate(90deg);
+    }
+
+    .imagem-grande {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.98);
+        z-index: 10001;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .imagem-grande.ativo {
+        opacity: 1;
+    }
+
+    .imagem-grande img {
+        max-height: 90vh;
+        max-width: 90vw;
+        object-fit: contain;
+        border-radius: 8px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .galeria-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .galeria-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+        
+        .galeria-conteudo {
+            padding: 0 20px;
+            margin: 20px auto;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .galeria-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    </style>
+
+    <script>
+    function abrirGaleria(pasta, numImagens) {
+        const galeriaAntiga = document.querySelector('.galeria-modal');
+        if (galeriaAntiga) {
+            galeriaAntiga.remove();
+        }
+
+        const galeria = document.createElement('div');
+        galeria.className = 'galeria-modal';
+        
+        let imagens = '';
+        let caminhoBase = '../imagens/';
+        
+        // Define o caminho base baseado na categoria
+        if (pasta.includes('atelier-pixel')) {
+            // Lista de todas as imagens disponíveis para a linha Atelier Pixel
+            const imagensAtelier = [
+                'albuns/atelie_ (1).jpg',
+                'albuns/atelie_ (3).jpg',
+                'albuns/atelie_ (4).jpg',
+                'albuns/atelie_ (5).jpg',
+                'albuns/atelie_ (6).jpg',
+                'albuns/atelie_ (7).jpg',
+                'albuns/atelie_ (8).jpg'
+            ];
+            imagensAtelier.forEach(img => {
+                imagens += `<div class="galeria-item">
+                    <img src="${caminhoBase}${img}" alt="Atelier Pixel - ${img.split('/').pop()}" class="img-fluid">
+                </div>`;
+            });
+        } else if (pasta.includes('servicos')) {
+            // Tratamento especial para serviços
+            const servico = pasta.split('/').pop();
+            for (let i = 1; i <= numImagens; i++) {
+                imagens += `<div class="galeria-item">
+                    <img src="${caminhoBase}servicos/${servico}/_ (${i}).jpg" alt="${servico.replace(/-/g, ' ')} - Imagem ${i}" class="img-fluid">
+                </div>`;
+            }
+        } else {
+            // Para outras categorias
+            for (let i = 1; i <= numImagens; i++) {
+                imagens += `<div class="galeria-item">
+                    <img src="${caminhoBase}${pasta}/_ (${i}).jpg" alt="${pasta.replace(/-/g, ' ')} - Imagem ${i}" class="img-fluid">
+                </div>`;
+            }
+        }
+        
+        galeria.innerHTML = `
+            <div class="galeria-conteudo">
+                <button class="galeria-fechar" onclick="this.parentElement.parentElement.remove()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="galeria-container">
+                    ${imagens}
+                </div>
+            </div>
+        `;
+        
+        document.body.appendChild(galeria);
+    }
+
+    function fecharGaleria() {
+        const galeria = document.querySelector('.galeria-modal');
+        if (galeria) {
+            galeria.classList.remove('ativo');
+            setTimeout(() => {
+                galeria.remove();
+                document.body.style.overflow = '';
+            }, 300);
+        }
+    }
+
+    function mostrarImagemGrande(src) {
+        const modal = document.createElement('div');
+        modal.className = 'imagem-grande';
+        
+        modal.innerHTML = `
+            <button class="galeria-fechar" onclick="this.parentElement.remove()">&times;</button>
+            <img src="${src}" alt="Imagem ampliada">
+        `;
+        
+        document.body.appendChild(modal);
+        setTimeout(() => modal.classList.add('ativo'), 10);
+        
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                modal.classList.remove('ativo');
+                setTimeout(() => modal.remove(), 300);
+            }
+        });
+    }
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            fecharGaleria();
+            const imagemGrande = document.querySelector('.imagem-grande');
+            if (imagemGrande) {
+                imagemGrande.remove();
+            }
+        }
+    });
+    </script>
+
+    <style>
+    /* Estilos do grid de produtos */
+    .products-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 24px;
+        margin: 0;
+        padding: 20px 0;
+    }
+
+    /* Estilos do card */
+    .product-item {
+        width: 100%;
+        height: 100%;
+    }
+
+    .product-card {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        transition: all 0.3s ease;
+    }
+
+    .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
+
+    /* Imagem do produto */
+    .product-card .position-relative {
+        aspect-ratio: 4/3;
+        overflow: hidden;
+        background: #f8f9fa;
+    }
+
+    .product-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .product-card:hover img {
+        transform: scale(1.05);
+    }
+
+    /* Conteúdo do card */
+    .product-card .p-4 {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .product-card h3 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #333;
+        margin: 0;
+    }
+
+    .product-card p {
+        font-size: 0.9rem;
+        color: #666;
+        margin: 0;
+        line-height: 1.5;
+    }
+
+    .product-card ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        flex: 1;
+    }
+
+    .product-card li {
+        font-size: 0.85rem;
+        color: #555;
+        display: flex;
+        align-items: flex-start;
+        gap: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .product-card li i {
+        color: var(--primary-color);
+        margin-top: 0.25rem;
+    }
+
+    .product-card .btn {
+        margin-top: auto;
+        padding: 0.75rem 1.5rem;
+    }
+
+    /* Botão Ver fotos */
+    .btn-light.position-absolute {
+        bottom: 1rem;
+        right: 1rem;
+        opacity: 0;
+        transform: translateY(10px);
+        transition: all 0.3s ease;
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(4px);
+        border: none;
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+        z-index: 2;
+    }
+
+    .position-relative:hover .btn-light.position-absolute {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .btn-light.position-absolute:hover {
+        background: white;
+        transform: translateY(-2px);
+    }
+
+    /* Responsividade */
+    @media (max-width: 1400px) {
+        .products-grid {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+    }
+
+    @media (max-width: 992px) {
+        .products-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 20px;
+        }
+        
+        .product-card h3 {
+            font-size: 1.1rem;
+        }
+        
+        .product-card p {
+            font-size: 0.85rem;
+        }
+        
+        .product-card li {
+            font-size: 0.8rem;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .products-grid {
+            grid-template-columns: minmax(0, 1fr);
+            gap: 16px;
+        }
+    }
+
+    /* Animação de fade */
+    .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeIn 0.5s ease forwards;
+    }
+
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    </style>
+</body>
+</html> 

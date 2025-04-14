@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linha Family Day - Pixel Formaturas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../imagens/logo.png" alt="Logo Pixel Formaturas" height="40">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="funcionalidades.html">Funcionalidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="produtos.html">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="family-day.html">Family Day</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="taxas-financeiras.html">Taxas Financeiras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quem-somos.html">Quem somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contatos.html">Contatos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-primary ms-lg-3" href="https://www.meusalbunsdeformatura.com.br">Já sou parceiro</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="features-hero">
+            <div class="container">
+                <div class="hero-wrapper">
+                    <div class="hero-content">
+                        <span class="hero-badge">Family Day</span>
+                        <h1>Um dia especial para celebrar com a família</h1>
+                        <p>Ofereça uma experiência única e memorável para seus clientes, com um evento completo e personalizado</p>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <div class="stat-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <span class="stat-value">100%</span>
+                                    <span class="stat-label">Satisfação</span>
+                                </div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-icon">
+                                    <i class="fas fa-camera"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <span class="stat-value">500+</span>
+                                    <span class="stat-label">Fotos</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <style>
+        .features-hero {
+            background: #E30613;
+            padding: 5rem 0;
+        }
+
+        .hero-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: white;
+            color: #E30613;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-content h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero-content p {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .stat-icon {
+            width: 48px;
+            height: 48px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .stat-icon i {
+            color: white;
+            font-size: 1.25rem;
+        }
+
+        .stat-info {
+            text-align: left;
+        }
+
+        .stat-value {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+        }
+
+        .stat-label {
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        @media (max-width: 768px) {
+            .features-hero {
+                padding: 3rem 0;
+            }
+
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .hero-stats {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+        }
+        </style>
+
+        <!-- Intro Section -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row mb-5 fade-in">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="mb-4">O que é o Family Day?</h2>
+                        <p class="lead mb-4">O Family Day é um conceito criado pela Pixel Formaturas para celebrar momentos especiais com familiares e amigos.</p>
+                        <p>Nossos pacotes Family Day foram desenvolvidos para proporcionar experiências completas em formaturas, com diferentes opções que atendem desde colégios até faculdades, com preços e níveis de personalização variados.</p>
+                        <p>Cada pacote foi cuidadosamente estruturado para garantir que todos os momentos importantes sejam capturados e preservados com a qualidade que só a Pixel pode oferecer.</p>
+                    </div>
+                </div>
+
+                <div class="row mb-5 fade-in">
+                    <div class="col-md-12 text-center">
+                        <h2 class="mb-4">Nossos Pacotes</h2>
+                        <p class="lead text-center mb-5">Nossa Linha Family Day é especialmente pensada para colégios e faculdades, com pacotes que atendem diferentes necessidades e orçamentos.</p>
+                    </div>
+                </div>
+
+                <!-- Pacotes para Colégios -->
+                <div class="row mb-5 fade-in">
+                    <div class="col-md-12">
+                        <h3 class="mb-4 text-center">Pacotes para Colégios</h3>
+                        <div class="bg-white p-4 rounded shadow">
+                            <div class="row">
+                                <div class="col-md-4 mb-4">
+                                    <div class="card h-100 shadow-sm">
+                                        <div class="card-header text-center bg-primary text-white py-3">
+                                            <h4 class="mb-0">Pacote Simples – Bistrô</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>Pacote básico e acessível para colégios, com opções essenciais para registrar o momento especial da formatura.</p>
+                                            <ul class="list-unstyled mt-4">
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Álbum Standard</li>
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Fotos digitais</li>
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Entrega rápida</li>
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Acesso à plataforma online</li>
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Captura em HD das imagens</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-footer text-center">
+                                            <a href="contatos.html" class="btn btn-outline-primary">Solicitar informações</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="card h-100 shadow-sm">
+                                        <div class="card-header text-center bg-primary text-white py-3">
+                                            <h4 class="mb-0">Pacote Intermediário – Rústico</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>Pacote intermediário para colégios, com mais opções e um álbum de melhor qualidade.</p>
+                                            <ul class="list-unstyled mt-4">
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Álbum Premium</li>
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Fotos digitais em alta resolução</li>
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Estojo padronizado</li>
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Entrega personalizada</li>
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Tratamento básico das fotos</li>
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Opções de personalização</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-footer text-center">
+                                            <a href="contatos.html" class="btn btn-outline-primary">Solicitar informações</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="card h-100 shadow-sm">
+                                        <div class="card-header text-center bg-primary text-white py-3">
+                                            <h4 class="mb-0">Pacote Top – Contemporâneo</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>Pacote completo para colégios que buscam o melhor, com álbum de alta qualidade e acessórios exclusivos.</p>
+                                            <ul class="list-unstyled mt-4">
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Álbum Atelier Pixel</li>
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Fotos digitais em alta resolução</li>
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Estojo premium personalizado</li>
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Canudo personalizado</li>
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Entrega premium</li>
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Tratamento avançado das fotos</li>
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Projeto gráfico exclusivo</li>
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Mini álbum para os pais</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-footer text-center">
+                                            <a href="contatos.html" class="btn btn-outline-primary">Solicitar informações</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pacotes para Faculdades -->
+                <div class="row mb-5 fade-in">
+                    <div class="col-md-12">
+                        <h3 class="mb-4 text-center">Pacotes para Faculdades</h3>
+                        <div class="bg-white p-4 rounded shadow">
+                            <div class="row">
+                                <div class="col-md-4 mb-4">
+                                    <div class="card h-100 shadow-sm">
+                                        <div class="card-header text-center bg-primary text-white py-3">
+                                            <h4 class="mb-0">Pacote Simples – Premium</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>Pacote básico para formatura universitária, com qualidade Pixel e preço acessível.</p>
+                                            <ul class="list-unstyled mt-4">
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Álbum Linha Tradicional</li>
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Fotos digitais</li>
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Estojo básico</li>
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Entrega padrão</li>
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Acesso à plataforma online</li>
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> 60 fotos no álbum</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-footer text-center">
+                                            <a href="contatos.html" class="btn btn-outline-primary">Solicitar informações</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="card h-100 shadow-sm">
+                                        <div class="card-header text-center bg-primary text-white py-3">
+                                            <h4 class="mb-0">Pacote Intermediário – Master</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>Pacote intermediário para universitários que buscam um produto diferenciado.</p>
+                                            <ul class="list-unstyled mt-4">
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Álbum Linha Premium Layflat</li>
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Fotos digitais tratadas</li>
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Estojo personalizado</li>
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Certificado de curso</li>
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Entrega expressa</li>
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> 100 fotos no álbum</li>
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Opções de layout personalizáveis</li>
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Capas especiais</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-footer text-center">
+                                            <a href="contatos.html" class="btn btn-outline-primary">Solicitar informações</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="card h-100 shadow-sm">
+                                        <div class="card-header text-center bg-primary text-white py-3">
+                                            <h4 class="mb-0">Pacote Top – Platinum</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>A experiência completa para universitários que querem o melhor produto do mercado.</p>
+                                            <ul class="list-unstyled mt-4">
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Álbum Atelier Pixel Exclusivo</li>
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Tratamento avançado das fotos</li>
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Estojo Platinum personalizado</li>
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Certificado de curso com proteção UV</li>
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Canudo premium personalizado</li>
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Entrega premium com embalagem especial</li>
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Álbum sem limites de fotos</li>
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Designer dedicado</li>
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Mini álbuns para pais</li>
+                                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Pôster de formatura</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-footer text-center">
+                                            <a href="contatos.html" class="btn btn-outline-primary">Solicitar informações</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Diferenciais -->
+                <div class="row mb-5 fade-in">
+                    <div class="col-md-12 text-center">
+                        <h2 class="mb-4">Diferenciais da Linha Family Day</h2>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="feature-box bg-white text-center h-100">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3 class="feature-title">Experiência para todos</h3>
+                            <p>Criamos uma experiência completa que envolve não só o formando, mas toda a família na celebração deste momento tão especial.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="feature-box bg-white text-center h-100">
+                            <div class="feature-icon">
+                                <i class="fas fa-camera"></i>
+                            </div>
+                            <h3 class="feature-title">Qualidade superior</h3>
+                            <p>Utilizamos equipamentos de última geração e materiais premium para garantir que suas memórias sejam preservadas com a mais alta qualidade.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="feature-box bg-white text-center h-100">
+                            <div class="feature-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3 class="feature-title">Personalização total</h3>
+                            <p>Oferecemos opções de personalização para tornar seu álbum único, refletindo sua personalidade e a importância do momento.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testemunhos -->
+        <section class="bg-light py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center mb-5">
+                        <h2 class="display-6 fw-bold">O que nossos clientes dizem</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="testimonial-card text-center h-100">
+                            <p class="lead mb-4"><i class="fas fa-quote-left me-2 text-primary"></i>O pacote Premium para formatura do meu curso de Engenharia foi perfeito. Qualidade excepcional e o atendimento superou todas as expectativas.<i class="fas fa-quote-right ms-2 text-primary"></i></p>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <div class="text-center">
+                                    <h5 class="mb-1">Rafael Mendes</h5>
+                                    <p class="text-muted mb-0">UFRJ - Engenharia Civil</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="testimonial-card text-center h-100">
+                            <p class="lead mb-4"><i class="fas fa-quote-left me-2 text-primary"></i>Como coordenadora de uma escola, posso garantir que o pacote Contemporâneo para nossos formandos do ensino médio foi um sucesso absoluto entre alunos e pais.<i class="fas fa-quote-right ms-2 text-primary"></i></p>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <div class="text-center">
+                                    <h5 class="mb-1">Carla Oliveira</h5>
+                                    <p class="text-muted mb-0">Coordenadora, Colégio São Francisco</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="testimonial-card text-center h-100">
+                            <p class="lead mb-4"><i class="fas fa-quote-left me-2 text-primary"></i>O pacote Platinum para minha turma de Medicina foi o toque final perfeito para nossa jornada acadêmica. O álbum ficou maravilhoso e os detalhes personalizados fizeram toda a diferença.<i class="fas fa-quote-right ms-2 text-primary"></i></p>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <div class="text-center">
+                                    <h5 class="mb-1">Fernanda Almeida</h5>
+                                    <p class="text-muted mb-0">USP - Medicina</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="bg-primary text-white py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="display-6 fw-bold mb-4">Pronto para criar memórias inesquecíveis?</h2>
+                        <p class="lead mb-4">Entre em contato conosco e descubra qual pacote Family Day é perfeito para sua instituição de ensino.</p>
+                        <a href="contatos.html" class="btn btn-light btn-lg">SOLICITAR ORÇAMENTO</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>Pixel Formaturas</h5>
+                    <p>A melhor solução para formaturas do grupo Pixel House. Desde 2004, oferecemos soluções rápidas e fáceis para revelação digital e fotoprodutos personalizados.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html" class="text-light">Início</a></li>
+                        <li><a href="funcionalidades.html" class="text-light">Funcionalidades</a></li>
+                        <li><a href="produtos.html" class="text-light">Produtos</a></li>
+                        <li><a href="family-day.html" class="text-light">Family Day</a></li>
+                        <li><a href="taxas-financeiras.html" class="text-light">Taxas Financeiras</a></li>
+                        <li><a href="quem-somos.html" class="text-light">Quem Somos</a></li>
+                        <li><a href="contatos.html" class="text-light">Contatos</a></li>
+                        <li><a href="https://www.meusalbunsdeformatura.com.br" class="text-light">Área do Parceiro</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Contato</h5>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> Alameda Surubiju, 1850, Alphaville Industrial, Barueri - SP, 06455-040</p>
+                        <p><i class="fas fa-phone me-2"></i> (11) 3509-5299</p>
+                        <p><i class="fas fa-clock me-2"></i> Atendimento de 2ª a 6ª, das 09h às 18h</p>
+                    </address>
+                    <div class="mt-3">
+                        <a href="https://www.facebook.com/pixelformaturas" target="_blank" class="me-2 text-light"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/pixelformaturas" target="_blank" class="me-2 text-light"><i class="fab fa-instagram"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=551135095299" target="_blank" class="text-light"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>Copyright 2024: Pixel House Soluções em Imagem :: CNPJ 06.251.204/0001-81</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="whatsapp-float">
+        <a href="https://api.whatsapp.com/send?phone=551135095299" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html> 
