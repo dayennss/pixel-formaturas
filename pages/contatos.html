@@ -208,35 +208,35 @@
             <div class="container">
                 <div class="row g-4">
                     <div class="col-md-6">
-                        <!-- <div class="bg-white p-4 rounded shadow h-100">
+                        <div class="bg-white p-4 rounded shadow h-100">
                             <h2 class="mb-4">Envie uma mensagem pra gente</h2>
                             <p class="mb-4">Marque uma visita aqui na nossa sede para conhecer melhor a nossa produção e nosso show room.</p>
                             
-                            <form class="contact-form needs-validation" novalidate>
+                            <form class="contact-form needs-validation" novalidate id="contatoForm">
                                 <div class="mb-3">
                                     <label for="name" class="form-label">Nome</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Seu nome completo" required>
+                                    <input type="text" class="form-control" id="name" name="name" required>
                                     <div class="invalid-feedback">
                                         Por favor, informe seu nome.
                                     </div>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="email" class="form-label">E-mail</label>
-                                    <input type="email" class="form-control" id="email" placeholder="seu@email.com" required>
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
                                     <div class="invalid-feedback">
                                         Por favor, informe um e-mail válido.
                                     </div>
                                 </div>
                                 <div class="mb-3">
                                     <label for="phone" class="form-label">Telefone</label>
-                                    <input type="tel" class="form-control" id="phone" placeholder="(00) 00000-0000" required>
+                                    <input type="tel" class="form-control" id="phone" name="phone" required>
                                     <div class="invalid-feedback">
                                         Por favor, informe seu telefone.
                                     </div>
                                 </div>
                                 <div class="mb-3">
                                     <label for="message" class="form-label">Mensagem</label>
-                                    <textarea class="form-control" id="message" rows="5" placeholder="Digite sua mensagem aqui..." required></textarea>
+                                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
                                     <div class="invalid-feedback">
                                         Por favor, digite sua mensagem.
                                     </div>
@@ -245,7 +245,7 @@
                                     <button type="submit" class="btn btn-primary">ENVIAR</button>
                                 </div>
                             </form>
-                        </div> -->
+                        </div>
                     </div>
                     <div class="col-md-6">
                         <div class="bg-white p-4 rounded shadow h-100">
@@ -449,5 +449,129 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/main.js"></script>
+    <script>
+        // Configuração da API do Pipedrive
+        const apiToken = '2589430c46010ce106c3a346cbeeb073ba5b951a'; // seu token do Pipedrive
+        const apiUrl = 'https://api.pipedrive.com/v1';
+
+        // Função para criar a pessoa no Pipedrive
+        async function criarPessoa(dados) {
+            const pessoaData = {
+                name: dados.nome,
+                email: dados.email,
+                phone: dados.telefone
+            };
+
+            const response = await fetch(`${apiUrl}/persons?api_token=${apiToken}`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(pessoaData)
+            });
+
+            const data = await response.json();
+            
+            if (data.success) {
+                console.log('Pessoa criada com sucesso:', data.data.id);
+                return data.data.id;
+            } else {
+                console.error('Erro ao criar pessoa:', data);
+                throw new Error('Falha na criação da pessoa');
+            }
+        }
+
+        // Função para criar o lead no Pipedrive
+        async function criarLead(personId, dados) {
+            const leadData = {
+                title: `Lead Novo - ${dados.nome}`,
+                person_id: personId,
+                value: {
+                    amount: 0,
+                    currency: 'BRL'
+                }
+            };
+
+            const response = await fetch(`${apiUrl}/leads?api_token=${apiToken}`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(leadData)
+            });
+
+            const data = await response.json();
+            
+            if (data.success) {
+                console.log('Lead criado com sucesso:', data.data.id);
+                return data.data.id;
+            } else {
+                console.error('Erro ao criar lead:', data);
+                throw new Error('Falha na criação do lead');
+            }
+        }
+
+        // Função para adicionar nota ao lead
+        async function adicionarNotaAoLead(leadId, mensagem) {
+            const noteData = {
+                content: mensagem,
+                lead_id: leadId
+            };
+
+            const response = await fetch(`${apiUrl}/notes?api_token=${apiToken}`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(noteData)
+            });
+
+            const data = await response.json();
+            
+            if (data.success) {
+                console.log('Nota adicionada com sucesso');
+            } else {
+                console.error('Erro ao adicionar nota:', data);
+                throw new Error('Falha ao adicionar nota');
+            }
+        }
+
+        // Função principal que cria pessoa e lead
+        async function criarPessoaELead(dados) {
+            try {
+                const personId = await criarPessoa(dados);
+                const leadId = await criarLead(personId, dados);
+                await adicionarNotaAoLead(leadId, `Mensagem: ${dados.mensagem}`);
+                console.log('Processo completo!');
+                return true;
+            } catch (error) {
+                console.error('Erro geral:', error.message);
+                return false;
+            }
+        }
+
+        // Adicionar evento de submit ao formulário
+        document.getElementById('contatoForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            // Coletar dados do formulário
+            const formData = {
+                nome: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                telefone: document.getElementById('phone').value,
+                mensagem: document.getElementById('message').value
+            };
+
+            // Enviar para o Pipedrive
+            const sucesso = await criarPessoaELead(formData);
+            
+            if (sucesso) {
+                alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+                this.reset();
+            } else {
+                alert('Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente.');
+            }
+        });
+    </script>
 </body>
 </html> 
