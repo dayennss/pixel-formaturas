@@ -484,7 +484,7 @@
         // Função para criar o lead no Pipedrive
         async function criarLead(personId, dados) {
             const leadData = {
-                title: `Lead Novo - ${dados.nome}`,
+                title: `${dados.nome}`,
                 person_id: personId,
                 value: {
                     amount: 0,
