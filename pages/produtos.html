@@ -13,7 +13,7 @@
         <nav class="navbar navbar-expand-lg bg-white">
             <div class="container">
                 <a class="navbar-brand" href="../index.html">
-                    <img src="../imagens/logo.png" alt="Logo Pixel Formaturas" height="40">
+                    <img src="../imagens/logos/SVG/pixellabor_hor_negativo.svg" alt="Logo Pixel Labor" height="40">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -430,7 +430,7 @@
                                         <p>Nossa linha premium com materiais nobres e acabamento artesanal, perfeita para quem busca exclusividade e sofisticação.</p>
                                         <ul class="list-unstyled">
                                             <li><i class="fas fa-check text-primary me-2"></i>Materiais: Nobres e exclusivos</li>
-                                            <li><i class="fas fa-check text-primary me-2"></i>Acabamento: Artesanal</li>
+                                            <li><i class="fas fa-check text-secondary me-2"></i>Acabamento: Artesanal</li>
                                             <li><i class="fas fa-check text-primary me-2"></i>Design: Exclusivo e sofisticado</li>
                                         </ul>
                                         <a href="#" class="btn btn-primary w-100 mt-3">Solicitar orçamento</a>
@@ -2238,50 +2238,63 @@
         
         // Define o caminho base baseado na categoria
         if (pasta.includes('atelier-pixel')) {
-            // Lista de todas as imagens disponíveis para a linha Atelier Pixel
+            // Lista de todas as imagens realmente existentes para a linha Atelier Pixel
             const imagensAtelier = [
                 'albuns/atelie_ (1).jpg',
                 'albuns/atelie_ (3).jpg',
                 'albuns/atelie_ (4).jpg',
                 'albuns/atelie_ (5).jpg',
                 'albuns/atelie_ (6).jpg',
-                'albuns/atelie_ (7).jpg',
-                'albuns/atelie_ (8).jpg'
+                'albuns/atelie_ (7).jpg'
             ];
             imagensAtelier.forEach(img => {
-                imagens += `<div class="galeria-item">
-                    <img src="${caminhoBase}${img}" alt="Atelier Pixel - ${img.split('/').pop()}" class="img-fluid">
-                </div>`;
+                imagens += `<div class=\"galeria-item\">\n                    <img src=\"${caminhoBase}${img}\" alt=\"Atelier Pixel - ${img.split('/').pop()}\" class=\"img-fluid\">\n                </div>`;
+            });
+        } else if (pasta.includes('fotografica-720g')) {
+            // Lista de todas as imagens realmente existentes para a linha Fotográfica 720g
+            const imagensFotografica = [
+                'albuns/fotografica_ (1).jpg'
+            ];
+            imagensFotografica.forEach(img => {
+                imagens += `<div class=\"galeria-item\">\n                    <img src=\"${caminhoBase}${img}\" alt=\"Fotográfica 720g - ${img.split('/').pop()}\" class=\"img-fluid\">\n                </div>`;
+            });
+        } else if (pasta.includes('acrilico-total')) {
+            // Lista de todas as imagens realmente existentes para a linha Acrílico Total
+            const imagensAcrilico = [
+                'estojos/acrilico-total/_ (1).jpg',
+                'estojos/acrilico-total/_ (2).jpg',
+                'estojos/acrilico-total/_ (3).jpg',
+                'estojos/acrilico-total/_ (4).jpg',
+                'estojos/acrilico-total/_ (5).jpg'
+            ];
+            imagensAcrilico.forEach(img => {
+                imagens += `<div class=\"galeria-item\">\n                    <img src=\"${caminhoBase}${img}\" alt=\"Acrílico Total - ${img.split('/').pop()}\" class=\"img-fluid\">\n                </div>`;
             });
         } else if (pasta.includes('servicos')) {
             // Tratamento especial para serviços
             const servico = pasta.split('/').pop();
             for (let i = 1; i <= numImagens; i++) {
-                imagens += `<div class="galeria-item">
-                    <img src="${caminhoBase}servicos/${servico}/_ (${i}).jpg" alt="${servico.replace(/-/g, ' ')} - Imagem ${i}" class="img-fluid">
-                </div>`;
+                imagens += `<div class=\"galeria-item\">\n                    <img src=\"${caminhoBase}servicos/${servico}/_ (${i}).jpg\" alt=\"${servico.replace(/-/g, ' ')} - Imagem ${i}\" class=\"img-fluid\">\n                </div>`;
             }
         } else {
             // Para outras categorias
             for (let i = 1; i <= numImagens; i++) {
-                imagens += `<div class="galeria-item">
-                    <img src="${caminhoBase}${pasta}/_ (${i}).jpg" alt="${pasta.replace(/-/g, ' ')} - Imagem ${i}" class="img-fluid">
-                </div>`;
+                imagens += `<div class=\"galeria-item\">\n                    <img src=\"${caminhoBase}${pasta}/_ (${i}).jpg\" alt=\"${pasta.replace(/-/g, ' ')} - Imagem ${i}\" class=\"img-fluid\">\n                </div>`;
             }
         }
         
         galeria.innerHTML = `
-            <div class="galeria-conteudo">
-                <button class="galeria-fechar" onclick="this.parentElement.parentElement.remove()">
-                    <i class="fas fa-times"></i>
+            <div class=\"galeria-conteudo\">
+                <button class=\"fechar-galeria\" onclick=\"fecharGaleria()\">
+                    <i class=\"fas fa-times\"></i>
                 </button>
-                <div class="galeria-container">
+                <div class=\"galeria-grid\">
                     ${imagens}
                 </div>
             </div>
         `;
-        
         document.body.appendChild(galeria);
+        setTimeout(() => galeria.classList.add('ativo'), 10);
     }
 
     function fecharGaleria() {

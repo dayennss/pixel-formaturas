@@ -2,9 +2,11 @@
     --primary-color: #e30613;
     --primary-color-hover: #c30510;
     --primary-color-light: rgba(227, 6, 19, 0.1);
-    --secondary-color: #212529;
+    --secondary-color: #C8E650;
+    --secondary-color-hover: #b8d640;
+    --secondary-color-light: rgba(200, 230, 80, 0.1);
     --tertiary-color: #f8f9fa;
-    --accent-color: #ffb700;
+    --accent-color: #C8E650;
     --text-color: #333;
     --text-color-light: #6c757d;
     --light-color: #f8f9fa;
@@ -19,6 +21,7 @@
     --box-shadow-hover: 0 15px 35px rgba(0, 0, 0, 0.15);
     --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     --gradient-primary: linear-gradient(135deg, var(--primary-color) 0%, #ff4b4b 100%);
+    --gradient-secondary: linear-gradient(135deg, var(--secondary-color) 0%, #d4f060 100%);
     --gradient-dark: linear-gradient(135deg, #333 0%, #121212 100%);
     --font-primary: 'Montserrat', sans-serif;
     --font-secondary: 'Poppins', sans-serif;
@@ -110,6 +113,67 @@ a:hover {
     background-color: var(--primary-color);
     color: var(--white);
     border-color: var(--primary-color);
+}
+
+/* Botões Secundários */
+.btn-secondary {
+    background: var(--gradient-secondary);
+    border: none;
+    color: var(--dark-color);
+    font-weight: 600;
+}
+
+.btn-secondary:hover {
+    background: var(--secondary-color);
+    color: var(--dark-color);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(200, 230, 80, 0.3);
+}
+
+.btn-outline-secondary {
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+    background-color: transparent;
+    border-width: 2px;
+    font-weight: 600;
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+    border-color: var(--secondary-color);
+}
+
+/* Classes utilitárias para cores */
+.text-secondary {
+    color: var(--secondary-color) !important;
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color) !important;
+}
+
+.bg-secondary-light {
+    background-color: var(--secondary-color-light) !important;
+}
+
+.bg-primary-light {
+    background-color: var(--primary-color-light) !important;
+}
+
+/* Timeline Numbers */
+.timeline-number {
+    background: var(--secondary-color);
+    color: var(--dark-color);
+    font-weight: bold;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 12px rgba(200, 230, 80, 0.3);
 }
 
 /* Header and Navigation */
